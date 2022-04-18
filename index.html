@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>T-Shirts Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <h2>T-Shirts - The UK & Germany Brand</h2><br>
+</head>
+
+<body>
+    <div class="product-details">
+        <h2>Product Summary:</h2>
+        <h3>T-Shirt - Black (Medium)</h3>
+        <p>Product price ..................... 8 EUR</p>
+        <p>Shipping .............................. 1 EUR</p>
+        <p class="total">Total: 9 EUR</p><br>
+    </div>
+    <form id="payment-form" method="POST" action="https://merchant.com/charge-card">
+        <div class="payment-details">
+            <h2>Payment Details:</h2>
+
+
+            <label id="name-label">Cardholder Name</label>
+            <input type="text" id="name-input" placeholder="First Name, Last Name"><br>
+
+            <label id="email-label">Email Address</label>
+            <input type="text" id="email-input" placeholder="name@domain.com"><br>
+
+
+            <div class="card-frame"></div>
+            <button id="pay-button" disabled>
+                PAY 9 EUR
+            </button>
+        </div>
+        <p class="error-message"></p>
+        <p class="success-payment-message"></p>
+    </form>
+
+    <script src="https://cdn.checkout.com/js/framesv2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
